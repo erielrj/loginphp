@@ -2,24 +2,29 @@ html,body{
     height: 100% !important;
 }
 body.bg{
-    background-image: linear-gradient(to right, red,yellow);
+    background-image: linear-gradient(to right, #531ebf,#00a6ff);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .btn {
-    background-color: black;
+    background-color: #3e08aa;
     color: white;
+    outline: 0;
+    border: 0;
 }
 .btn:hover {
-    background-color: orange;
+    background-color: #00a6ff;
     color: white;
 }
 
 input[type="submit"].btn:focus{
-    background-color: orange!important;
+    background-color: #674c9e!important;
 }
 
 .btn-light{
-    background-color: gray!important;
+    background-color: #808080!important;
+}
+.btn-light:hover{
+    background-color: #575757!important;
 }
