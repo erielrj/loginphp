@@ -19,7 +19,7 @@
 
     // Validate email
     if(empty($email)){
-      $email_err = 'Please enter email';
+      $email_err = 'Por favor, insira o email.';
     } else {
       // Prepare a select statement
       $sql = 'SELECT id FROM users WHERE email = :email';
@@ -32,7 +32,7 @@
         if($stmt->execute()){
           // Check if email exists
           if($stmt->rowCount() === 1){
-            $email_err = 'Email is already taken';
+            $email_err = 'O email já existe.';
           }
         } else {
           die('Something went wrong');
@@ -44,22 +44,22 @@
 
     // Validate name
     if(empty($name)){
-      $name_err = 'Please enter name';
+      $name_err = 'Por favor, insira o nome.';
     }
 
     // Validate password
     if(empty($password)){
-      $password_err = 'Please enter password';
+      $password_err = 'Por favor, insira a senha.';
     } elseif(strlen($password) < 6){
-      $password_err = 'Password must be at least 6 characters ';
+      $password_err = 'A senha deve ter no mínimo 6 carateres.';
     }
 
     // Validate Confirm password
     if(empty($confirm_password)){
-      $confirm_password_err = 'Please confirm password';
+      $confirm_password_err = 'Por favor, confirme a senha.';
     } else {
       if($password !== $confirm_password){
-        $confirm_password_err = 'Passwords do not match';
+        $confirm_password_err = 'As senhas não são iguais.';
       }
     }
 
@@ -101,7 +101,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="_resources/style.css">
-  <title>Register An Account</title>
+  <title>Cadastre sua conta</title>
 </head>
 <body class="bg">
   <div class="container">
