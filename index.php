@@ -28,8 +28,14 @@
       <div class="col">
         <div class="card card-body bg-light mt-5">
           <h2>Painel de controle <small class="text-muted"><?php echo $_SESSION['email']; ?></small></h2>
-          <p>Bem-vindo ao painel de controle, <?php echo $_SESSION['name']; ?>.</p>
-          <p><a href="logout.php" class="btn btn-danger">Logout</a></p>
+          <p class="text-center mt-4"><strong>Bem-vindo ao painel de controle, <?php echo $_SESSION['name']; ?>.</strong></p>
+          <div style="width:fit-content;" class="mx-auto">
+          <figure>
+            <img src="_resources/img/giphy.gif" alt="">
+            <figcaption class="text-center">Conseguiu logar, parabéns. Agora saia.</figcaption>
+          </figure>
+          </div>
+          <p><a href="logout.php" class="btn btn-danger mt-4">Sair</a></p>
         </div>
       </div>
     </div>
