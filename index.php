@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="_resources/style.css">
   <title>Dashboard</title>
 </head>
-<body class="bd-dark">
+<body class="bg">
   <div class="container">
     <div class="row">
       <div class="col">

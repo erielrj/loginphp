@@ -78,7 +78,7 @@
   <link rel="stylesheet" href="_resources/style.css">
   <title>Login To Your Account</title>
 </head>
-<body class="bg-primary">
+<body class="bg">
   <div class="container">
     <div class="row">
       <div class="col-md-6 mx-auto">
