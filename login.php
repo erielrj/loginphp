@@ -17,12 +17,12 @@
 
     // Validate email
     if(empty($email)){
-      $email_err = 'Please enter email';
+      $email_err = 'Por favor, insira seu email.';
     }
 
     // Validate password
     if(empty($password)){
-      $password_err = 'Please enter password';
+      $password_err = 'Por favor, insira sua senha. ';
     }
 
     // Make sure errors are empty
@@ -84,16 +84,14 @@
       <div class="col-md-6 mx-auto">
         <div class="card card-body bg-light mt-5">
           <h2>Login</h2>
-          <p>Fill in your credentials</p>
+          <p>Complete com seus dados:</p>
           <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">   
             <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" name="email" class="form-control form-control-lg <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
+              <input type="email" placeholder="Email" name="email" class="form-control form-control-lg <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
               <span class="invalid-feedback"><?php echo $email_err; ?></span>
             </div>
             <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" name="password" class="form-control form-control-lg <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
+              <input type="password" placeholder="Senha" name="password" class="form-control form-control-lg <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
               <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-row">
@@ -101,7 +99,7 @@
                 <input type="submit" value="Login" class="btn btn-success btn-block">
               </div>
               <div class="col">
-                <a href="register.php" class="btn btn-light btn-block">No account? Register</a>
+                <a href="register.php" class="btn btn-light btn-block">Não tem conta? Cadastre-se.</a>
               </div>
             </div>
           </form>

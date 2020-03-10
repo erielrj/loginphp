@@ -1,3 +1,20 @@
-body { 
-    background-color: red;
+.bg-primary{
+    background-color: black!important;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+}
+.btn:hover {
+    background-color: orange;
+    color: white;
+}
+
+input[type="submit"].btn:focus{
+    background-color: orange!important;
+}
+
+.btn-light{
+    background-color: gray!important;
 }

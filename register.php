@@ -108,36 +108,32 @@
     <div class="row">
       <div class="col-md-6 mx-auto">
         <div class="card card-body bg-light mt-5">
-          <h2>Create Account</h2>
-          <p>Fill in this form to register</p>
+          <h2>Crie sua conta</h2>
+          <p>Complete esse formulário para se registrar:</p>
           <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
             <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" name="name" class="form-control form-control-lg <?php echo (!empty($name_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $name; ?>">
+              <input type="text" placeholder="Nome" name="name" class="form-control form-control-lg <?php echo (!empty($name_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $name; ?>">
               <span class="invalid-feedback"><?php echo $name_err; ?></span>
             </div>
             <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" name="email" class="form-control form-control-lg <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
+              <input type="email" name="email" placeholder="Email" class="form-control form-control-lg <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
               <span class="invalid-feedback"><?php echo $email_err; ?></span>
             </div>
             <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" name="password" class="form-control form-control-lg <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
+              <input type="password" placeholder="Senha" name="password" class="form-control form-control-lg <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
               <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
-              <label for="confirm_password">Confirm Password</label>
-              <input type="password" name="confirm_password" class="form-control form-control-lg <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
+              <input type="password" placeholder="Confirme a senha" name="confirm_password" class="form-control form-control-lg <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
               <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
 
             <div class="form-row">
               <div class="col">
-                <input type="submit" value="Register" class="btn btn-success btn-block">
+                <input type="submit" value="Cadastrar " class="btn btn-success btn-block">
               </div>
               <div class="col">
-                <a href="login.php" class="btn btn-light btn-block">Have an account? Login</a>
+                <a href="login.php" class="btn btn-light btn-block">Já tem uma conta? Faça login.</a>
               </div>
             </div>
           </form>
